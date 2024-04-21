@@ -20,14 +20,13 @@ html {
 }
 
 :root {
-    --white-color: #09192f;
-    --color: #0f9408;
     --body-background: #eee;
-    --text-color: #ccc;
+    --text-color: #09192f;
+    --color: #0f9408;
 }
 
 body {
-    color: var(--white-color);
+    color: var(--text-color);
     font-size: 1.6rem;
     background-color: var(--body-background);
 }
@@ -38,9 +37,7 @@ body {
     padding: 0 2rem;
 }
 
-button {
-    cursor: pointer;
-}
+
 
 img {
     display: block;
@@ -52,21 +49,22 @@ p {
     line-height: 2.8rem;
 }
 
+p+p {
+    margin-top: 2rem;
+}
+
 
 .btn {
+    cursor: pointer;
     color: #eee;
     padding: .4rem .8rem;
     font-size: 1.4rem;
     transition: .4s;
-    background-color: var(--white-color);
+    background-color: var(--text-color);
 }
 
 .btn:hover {
     letter-spacing: 1px;
-}
-
-.btn:hover i {
-    color: var(--body-background) !important;
 }
 
 
@@ -101,9 +99,14 @@ section .container {
 /* ------ Header ------ */
 
 .header {
-    padding: 2rem 0;
+    padding: .4rem 0;
+    border-radius: 4rem;
     position: fixed;
-    width: 100%;
+    width: 95%;
+    left: 2.8%;
+    top: 1%;
+    display: block;
+    margin: 0 auto;
     background-color: #fff;
     z-index: 1;
 }
@@ -118,7 +121,7 @@ section .container {
 
 .header .logo a {
     font-size: 3rem;
-    color: var(--white-color);
+    color: var(--text-color);
 }
 
 .header .nav-links {
@@ -128,7 +131,7 @@ section .container {
 }
 
 .header .nav-links a {
-    color: var(--white-color);
+    color: var(--text-color);
     transition: .4s;
 }
 
@@ -162,10 +165,13 @@ section.home .container {
 
 section.home h1 {
     font-size: 4.8rem;
+    font-family: serif;
 }
 
 section.home h2 {
     font-size: 4.4rem;
+    font-family: serif;
+
 }
 
 section.home h3 {
@@ -188,6 +194,8 @@ section.about {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #09192f;
+    color: #eee;
 }
 
 section.about .container {
@@ -289,7 +297,7 @@ section.about .tech-list {
 }
 
 .team .card .social-media a {
-    background-color: var(--white-color);
+    background-color: var(--text-color);
     color: #eee;
     width: 3.2rem;
     height: 3.2rem;
@@ -370,7 +378,7 @@ section.about .tech-list {
     content: "";
     height: .4rem;
     width: 105%;
-    background-color: var(--white-color);
+    background-color: var(--text-color);
     position: absolute;
     bottom: -.1rem;
     left: 0;
@@ -430,7 +438,7 @@ section.about .tech-list {
     background-color: #fff;
     outline: none;
     width: 100%;
-    color: var(--white-color);
+    color: var(--text-color);
     padding: 1rem;
     border: 1px solid #ccc;
 }
@@ -464,7 +472,7 @@ section.about .tech-list {
     display: flex;
     gap: 1rem;
     align-items: center;
-    color: var(--white-color);
+    color: var(--text-color);
 }
 
 .contact .wrapper-info p+p {

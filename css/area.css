@@ -42,16 +42,6 @@
     border-radius: .4rem;
 }
 
-.work .row .card:hover {
-    transform: scale(1.05);
-    box-shadow: 1px 1px 5px #333;
-}
-
-.work .row .card:hover i {
-    background-color: #3df5d6;
-    color: #09192f;
-}
-
 .work .row .card-icon i {
     background-color: #333;
     width: 4rem;
