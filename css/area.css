@@ -1,23 +1,28 @@
-.material {
-
-    padding-top: 10rem;
+.area {
+    padding-top: 5rem;
 }
 
-.material h2 {
+.area .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+
+}
+
+.area h2 {
     margin-bottom: 2rem;
 }
 
-.material img {
-    float: right;
+.area img {
+    /* float: right;
     width: 40%;
     aspect-ratio: 1/1;
     box-shadow: 1px 1px 5px #ccc;
     display: block;
-    margin: 2rem;
+    margin: 2rem; */
 }
 
-.material p+p {
-    margin-top: 1rem;
+.area p+p {
+    margin-top: 2rem;
 }
 
 
