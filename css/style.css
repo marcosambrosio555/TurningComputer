@@ -21,6 +21,7 @@ html {
 :root {
     --body-background: #eee;
     --text-color: #09192f;
+    --text-color-light: #12223e;
 }
 
 body {
@@ -58,7 +59,7 @@ p {
 }
 
 .btn:hover {
-    /* letter-spacing: 1px; */
+    background-color: var(--text-color-light);
 }
 
 
@@ -538,50 +539,6 @@ section.about p+p {
     padding: 2rem 0;
 }
 
-@media screen and (max-width: 912px) {
-
-    /* html {
-        font-size: 55%;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-
-    .header .nav-links {
-        background-color: #fff;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
-        padding-right: 4rem;
-        width: 20rem;
-        opacity: 0;
-        visibility: hidden;
-        top: .4rem;
-        right: .8rem;
-        position: fixed;
-        height: 32rem;
-        transition: .4s;
-        border: 1px solid #ccc;
-    }
-
-    .header .nav-links.show {
-        opacity: 1;
-        visibility: visible;
-        transition: .4s;
-    }
-
-    .header .nav-links a:hover {
-        transform: translateX(-1rem);
-    }
-
-    section.about .row .wrapper:nth-child(2) {
-        order: -1;
-    } */
-
-
-}
 
 @media screen and (max-width: 768px) {
 
@@ -599,14 +556,16 @@ section.about p+p {
         flex-direction: column;
         justify-content: center;
         align-items: flex-end;
+        gap: 2rem;
         padding-right: 4rem;
-        width: 20rem;
+        font-size: 3.2rem;
+        width: 28rem;
         opacity: 0;
         visibility: hidden;
         top: .4rem;
         right: .8rem;
         position: fixed;
-        height: 32rem;
+        height: 48rem;
         transition: .4s;
         border: 1px solid #ccc;
     }
