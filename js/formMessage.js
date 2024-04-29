@@ -1,5 +1,6 @@
+
 const btnSendMessage = document.querySelector(
-    ".section-contact .card-form .btn"
+    ".contact .btn"
 );
 
 const scriptURL =
@@ -12,6 +13,11 @@ form.addEventListener("submit", (e) => {
     fetch(scriptURL, { method: "POST", body: new FormData(form) })
         .then((response) => {
             btnSendMessage.classList.remove("loading");
+            btnSendMessage.classList.add("success");
+
+            setTimeout(() => {
+                btnSendMessage.classList.remove("success");
+            }, 3000)
             form.reset();
             console.log("Success!", response);
         })

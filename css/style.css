@@ -5,6 +5,7 @@
     border: none;
     text-decoration: none;
     font-family: Poppins;
+    list-style: none;
 }
 
 html {
@@ -61,6 +62,7 @@ p {
 
 .btn:hover {
     background-color: var(--text-color-light);
+    color: var(--color);
 }
 
 .btn:hover i {
@@ -120,7 +122,9 @@ section .container {
 .header .logo a {
     font-size: 3rem;
     color: var(--text-color);
+    transition: .4s;
 }
+
 
 .header .nav-links {
     display: flex;
@@ -135,6 +139,8 @@ section .container {
 
 .header .nav-links a:hover {
     transition: .4s;
+
+    color: var(--color);
 }
 
 .header .nav-links a.btn {
@@ -173,6 +179,7 @@ section.home h2 {
     font-size: 3.6rem;
     font-family: serif;
     color: var(--color);
+    text-shadow: 1px 1px 2px #0d274b;
 }
 
 section.home p {
@@ -227,8 +234,93 @@ section.about p+p {
     margin-top: 1rem;
 }
 
+section.about-inform {
+    background-color: #09192f;
+    color: #eee;
+}
 
+section.about-inform ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    gap: 5rem;
+    padding-bottom: 8rem;
+    padding-top: 3rem;
+}
 
+section.about-inform ul li {
+    min-height: 20rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section.about-inform ul li i {
+    background-color: #09192f;
+    color: var(--color);
+    border-radius: 50%;
+    padding: 1rem;
+    font-size: 4rem;
+
+}
+
+section.about-inform ul li span {
+    color: #ccc;
+    font-size: 1.4rem;
+}
+
+/* Cultura */
+
+.cultura {
+    padding: 2rem 0;
+}
+
+.cultura ul {
+    padding-left: 4rem;
+}
+
+.cultura ul li {
+    list-style: disc;
+}
+
+.cultura h4 {
+    margin-top: 4rem;
+    margin-bottom: .5rem;
+    color: #12223e;
+}
+
+.cultura h4 i {
+    margin-right: .8rem;
+    color: #000;
+}
+
+.cultura p {
+    color: #555;
+    text-indent: 2.8rem;
+}
+
+.cultura p+p {
+    margin-bottom: 1rem;
+}
+
+.cultura article {
+    background-color: #09192f;
+    padding: 2rem 1rem;
+    font-style: italic;
+    border-radius: .4rem;
+    margin-top: 4rem;
+    color: #eee;
+}
+
+.cultura article h3 {
+    color: #eee;
+    margin-bottom: 1rem;
+}
+
+.cultura article p {
+    color: #ccc;
+}
 
 /* Team */
 
@@ -380,7 +472,6 @@ section.about p+p {
     width: 65rem;
     box-shadow: 0px 0px 3px #12223e;
     color: var(--color);
-    color: #fff;
 }
 
 
@@ -454,6 +545,21 @@ section.about p+p {
 .contact .btn {
     height: 4rem;
     width: 16rem;
+    transition: .4s;
+}
+
+.contact .btn.loading {
+    background-image: url("../images/loading.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    color: transparent;
+    transition: .4s;
+}
+
+.contact .btn.success {
+    background-image: #0a930a;
+    color: #fff;
+    transition: .4s;
 }
 
 
@@ -657,7 +763,7 @@ section.about p+p {
     }
 
     section h2 {
-        font-size: 3.2rem;
+        font-size: 2.8rem;
     }
 
     section.home .container {
