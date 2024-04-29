@@ -19,8 +19,8 @@
 }
 
 .area .col-image {
-    aspect-ratio: 5/3;
-    width: 100%;
+    /* aspect-ratio: 5/3; */
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;

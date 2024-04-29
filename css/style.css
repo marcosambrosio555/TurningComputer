@@ -669,14 +669,14 @@ section.about-inform ul li span {
         align-items: flex-end;
         gap: 2rem;
         padding-right: 4rem;
-        font-size: 3.2rem;
-        width: 28rem;
+        font-size: 1.8rem;
+        width: 24rem;
         opacity: 0;
         visibility: hidden;
         top: .4rem;
         right: .8rem;
         position: fixed;
-        height: 48rem;
+        height: 36rem;
         transition: .4s;
         border: 1px solid #ccc;
     }
