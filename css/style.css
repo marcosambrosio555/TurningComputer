@@ -22,6 +22,7 @@ html {
     --body-background: #eee;
     --text-color: #09192f;
     --text-color-light: #12223e;
+    --color: #3df5d6;
 }
 
 body {
@@ -60,6 +61,10 @@ p {
 
 .btn:hover {
     background-color: var(--text-color-light);
+}
+
+.btn:hover i {
+    color: var(--color);
 }
 
 
@@ -146,7 +151,12 @@ section.home {
     justify-content: center;
 }
 
+
 section.home .container {
+    display: flex;
+}
+
+section.home .container .wrapper-text {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -162,6 +172,7 @@ section.home h1 {
 section.home h2 {
     font-size: 3.6rem;
     font-family: serif;
+    color: var(--color);
 }
 
 section.home p {
@@ -199,7 +210,7 @@ section.about .row {
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     width: 100%;
     align-items: center;
-    gap: 4rem;
+    gap: 10rem;
 }
 
 section.about .row .wrapper {
@@ -221,13 +232,7 @@ section.about p+p {
 
 /* Team */
 
-/* .team {
-    background-color: pink;
-}
 
-.team .container {
-    background-color: coral;
-} */
 
 .team .row {
     display: grid;
@@ -240,10 +245,10 @@ section.about p+p {
     border: 1px solid #ccc;
     padding: 1rem;
     display: grid;
-    /* flex-direction: column; */
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 3fr 7fr;
     gap: 1rem;
     background-color: #fff;
+    max-height: 20rem;
 }
 
 .team .card .card-image {
@@ -258,15 +263,6 @@ section.about p+p {
     overflow: hidden;
 }
 
-.team .card img {
-    transition: .4s;
-    transform: scale(1.5);
-}
-
-.team .card img:hover {
-    transition: .4s;
-    transform: scale(1);
-}
 
 .team .card .card-image p {
     font-size: 3rem;
@@ -371,7 +367,7 @@ section.about p+p {
     content: "";
     height: .4rem;
     width: 105%;
-    background-color: var(--text-color);
+    background-color: var(--color);
     position: absolute;
     bottom: -.1rem;
     left: 0;
@@ -383,13 +379,17 @@ section.about p+p {
     position: relative;
     width: 65rem;
     box-shadow: 0px 0px 3px #12223e;
-    font-family: cursive;
+    color: var(--color);
     color: #fff;
 }
 
 
 .services .row .card-body .links a {
     padding: 1.2rem 3.2rem;
+}
+
+.services .row .card-body .links a:hover {
+    color: var(--color);
 }
 
 .services .row .card:nth-child(2n) .card-body {
@@ -504,6 +504,7 @@ section.about p+p {
 
 .footer .top i.fa-angle-right {
     margin-right: .8rem;
+    color: var(--color);
 }
 
 
@@ -544,6 +545,10 @@ section.about p+p {
 
     html {
         font-size: 55%;
+    }
+
+    section.home .wrapper-image {
+        display: none;
     }
 
     .hamburger {
@@ -642,6 +647,11 @@ section.about p+p {
         font-size: 50%;
     }
 
+    section.home h1 {
+        font-size: 3.6rem;
+        font-family: serif;
+    }
+
     section {
         height: auto;
     }
@@ -657,8 +667,16 @@ section.about p+p {
         align-items: center;
     }
 
+    section.home .container .wrapper-text {
+        align-items: center;
+    }
+
     section.home .btn {
         margin: auto;
+    }
+
+    section.about .row {
+        gap: 2rem;
     }
 
 
