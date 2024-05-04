@@ -1,0 +1,152 @@
+/* Commentaries */
+
+.main {
+    min-height: 100vh;
+}
+
+.commentaries .wrapper-form {
+    margin-bottom: 2rem;
+}
+
+.commentaries form {
+    gap: .4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.commentaries form .btn {
+    padding: 1rem 3.6rem;
+}
+
+.commentaries .wrapper-messages {
+    margin-top: 1rem;
+}
+
+.wrapper-messages {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    max-height: 40rem;
+    overflow-y: scroll;
+}
+
+.messages {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow-y: scroll;
+    max-height: 30rem;
+    margin-top: 1.6rem;
+}
+
+.message {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.message .top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.message .top .name {
+    color: #222;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.message .top .date {
+    color: #777;
+    font-size: 1rem;
+}
+
+.message .body {
+    color: #454545;
+    font-style: italic;
+    font-size: 1.4rem;
+}
+
+.template {
+    display: none;
+}
+
+
+
+
+/* admin */
+
+.commentaries {
+    position: relative;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+form {
+    margin-top: 2rem;
+}
+
+.form-control {
+    width: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+
+
+
+/* Answer */
+
+.messageBody {
+    margin-top: 2rem;
+}
+
+.answers-list {
+    margin-top: 2rem;
+}
+
+.answers-list .answer {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.answers-list .answer.template {
+    display: none;
+}
+
+.message.answer .name {
+    color: #217dd3;
+}
+
+
+
+/* Background modal */
+
+
+.background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+}
+
+.background.hide {
+    display: none;
+}
+
+.background img {
+    height: 4rem;
+    width: 4rem;
+}

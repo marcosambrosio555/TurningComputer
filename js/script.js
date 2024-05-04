@@ -12,3 +12,8 @@ menu.querySelectorAll("a").forEach(a => {
         menu.classList.remove("show")
     })
 })
+
+// Iniciar AOS
+AOS.init({
+    duration: 2000
+})

@@ -139,8 +139,8 @@ section .container {
 
 .header .nav-links a:hover {
     transition: .4s;
-
     color: var(--color);
+    text-shadow: 1px 1px 0px #333;
 }
 
 .header .nav-links a.btn {
@@ -217,17 +217,22 @@ section.about .row {
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     width: 100%;
     align-items: center;
-    gap: 10rem;
+    gap: 8rem;
 }
 
 section.about .row .wrapper {
     display: flex;
     flex-direction: column;
-    padding: 4rem 0rem;
+    padding: 2rem 0rem;
+
 }
 
 section.about .row .wrapper img {
     margin: auto;
+}
+
+section.about p {
+    font-size: 1.4rem;
 }
 
 section.about p+p {
@@ -244,7 +249,7 @@ section.about-inform ul {
     grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
     gap: 5rem;
     padding-bottom: 8rem;
-    padding-top: 3rem;
+    /* padding-top: 3rem; */
 }
 
 section.about-inform ul li {
@@ -254,6 +259,8 @@ section.about-inform ul li {
     text-align: center;
     align-items: center;
     justify-content: space-around;
+    gap: .8rem;
+    padding: 1rem;
 }
 
 section.about-inform ul li i {
@@ -282,21 +289,22 @@ section.about-inform ul li span {
 
 .cultura ul li {
     list-style: disc;
+    color: #555;
 }
 
 .cultura h4 {
     margin-top: 4rem;
     margin-bottom: .5rem;
-    color: #12223e;
+    color: #000;
 }
 
 .cultura h4 i {
     margin-right: .8rem;
-    color: #000;
+    color: #1f9884;
 }
 
 .cultura p {
-    color: #555;
+    color: #222;
     text-indent: 2.8rem;
 }
 
@@ -320,6 +328,20 @@ section.about-inform ul li span {
 
 .cultura article p {
     color: #ccc;
+}
+
+.cultura .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 5rem;
+    padding: 4rem 0;
+}
+
+.cultura .cards p {
+    text-indent: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 2rem;
 }
 
 /* Team */
@@ -783,6 +805,11 @@ section.about-inform ul li span {
 
     section.about .row {
         gap: 2rem;
+    }
+
+
+    section.about-inform ul li span {
+        max-width: 32rem;
     }
 
 

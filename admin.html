@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TurningComputer</title>
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/5b8f00096f.js" crossorigin="anonymous"></script>
     <!-- <link rel="stylesheet" href="css/all.css"> -->
@@ -13,6 +13,7 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/other.css">
     <link rel="stylesheet" href="css/area.css">
+    <link rel="stylesheet" href="css/comment.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Poppins -->
@@ -38,111 +39,77 @@
             </div>
             <nav class="nav-links">
                 <a href="./index.html">Inicio</a>
-                <a href="./redes.html">Redes</a>
+                <a href="./network.html">Redes</a>
                 <a href="./hardware.html">Hardware</a>
-                <a href="#contact">Contato</a>
+                <a href="./programmation.html">Programação</a>
             </nav>
         </div>
     </header>
     <main class="main">
 
-        <!-- Inicio -->
-        <section class="area">
+        <!-- Comentarios -->
+        <section class="commentaries">
             <div class="container">
-                <h2>Programação</h2>
-                <div class="row">
-                    <div class="col col-image">
-                        <img src="images/programacao.svg" alt="">
+                <h2>Respostas</h2>
+
+                <div class="messageBody message">
+                    <div class="top">
+                        <span class="name"></span>
+                        <span class="date"></span>
                     </div>
-                    <div class="col">
-                        <p>
-                            Desenvolvimento de Websites:
-                            Criamos websites profissionais e responsivos que refletem a identidade e os objetivos de
-                            nossos clientes. Nossos serviços abrangem desde o design e desenvolvimento até a otimização
-                            para mecanismos de busca (SEO) e integração com sistemas de gerenciamento de conteúdo (CMS).
-                        </p>
+                    <div class="body"></div>
+                    <span class="answers"></span>
+                </div>
+
+                <form action="http://localhost:4040/answer" method="post">
+                    <input type="hidden" name="id" id="id" value="">
+                    <input type="hidden" name="page" id="page" value="">
+                    <div class="box">
+                        <select name="name" id="name" class="form-control">
+                            <option value="Marcos Ambrósio">Marcos Ambrósio</option>
+                            <option value="Joseph Miguel">Joseph Miguel</option>
+                            <option value="William Queta">William Queta</option>
+                            <option value="Antônio Estudante">Antônio Estudante</option>
+                            <option value="Felisberto Alberto">Felisberto Alberto</option>
+                            <option value="Nuno Quissanga">Nuno Quissanga</option>
+                        </select>
+                    </div>
+                    <div class="box">
+                        <textarea name="answer" id="answer" cols="30" rows="10" class="form-control"
+                            placeholder="Responda o comentário..."></textarea>
+                    </div>
+                    <div class="box">
+                        <button class="btn" type="submit">
+                            <i class="fa fa-paper-plane"></i> Responder
+                        </button>
+                    </div>
+                </form>
+
+                <div class="answers-list">
+                    <div class="answer message template">
+
+                        <div class="top">
+                            <span class="name"></span>
+                            <span class="date"></span>
+                        </div>
+                        <div class="body"></div>
+                        <span class="answers"></span>
+
                     </div>
                 </div>
+
 
             </div>
-        </section>
-
-        <section class="work">
-            <div class="container">
-                <h2>Nossos serviços</h2>
-                <h3>Tudo que voçê precisa para um website</h3>
-                <div class="row">
-
-                    <div class="card">
-                        <div class="card-icon">
-                            <i class="fa fa-file"></i>
-                        </div>
-                        <div class="card-body">
-                            <h4>Criação de páginas estáticas</h4>
-                            <p>Criamos páginas simples desde Landing Pages até Portifolios</p>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-icon">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <div class="card-body">
-                            <h4>Resivão e Hospedagem</h4>
-                            <p>Estamos disponiveis para revisar o teu site e hospedar-lo</p>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-icon">
-                            <i class="fab fa-node"></i>
-                        </div>
-                        <div class="card-body">
-                            <h4>Construção de servidores</h4>
-                            <p>Criamos servidores com nodejs e banco de dados com mongodb e postgres</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Contato -->
-        <section class="contact" id="contact">
-            <div class="container">
-                <h2>Contato</h2>
-                <h3>Deixem-nos uma mensagem</h3>
-
-                <div class="row">
-                    <form name="contact-us">
-                        <div class="box">
-                            <input type="text" class="form-control" id="name" placeholder="Seu nome" name="name"
-                                required />
-                        </div>
-                        <div class="box">
-                            <input type="email" class="form-control" id="email" placeholder="Seu email" name="email"
-                                required />
-                        </div>
-                        <div class="box">
-                            <textarea id="message" class="form-control" cols="30" rows="10" placeholder="Sua mensagem"
-                                name="message" name="message" required></textarea>
-                        </div>
-                        <div class="box">
-                            <button type="submit" class="btn">
-                                <i class="fa fa-paper-plane"></i> Send
-                            </button>
-                        </div>
-                    </form>
-
-                    <div class="wrapper-image">
-                        <img src="images/contact.svg" alt="Imagem de redes">
-                    </div>
-                </div>
 
             </div>
         </section>
 
     </main>
+
+    <!-- Modal loading -->
+    <div class="background loading hide">
+        <img src="images/loading.gif" alt="loading_image">
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -195,8 +162,7 @@
     </footer>
 
     <script src="js/script.js"></script>
-    <script src="js/formMessage.js"></script>
-
+    <script src="js/admin.js"></script>
 </body>
 
 </html>

@@ -6,7 +6,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     align-items: center;
-    gap: 10rem;
+    gap: 4rem;
 }
 
 .area h2 {
@@ -19,7 +19,6 @@
 }
 
 .area .col-image {
-    /* aspect-ratio: 5/3; */
     width: 80%;
     display: flex;
     justify-content: center;
@@ -54,6 +53,8 @@
     padding: 4rem 1rem;
     transition: .4s;
     border-radius: .4rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
 }
 
 .work .row .card-icon i {

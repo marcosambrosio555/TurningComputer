@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TurningComputer</title>
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/5b8f00096f.js" crossorigin="anonymous"></script>
     <!-- <link rel="stylesheet" href="css/all.css"> -->
@@ -13,7 +13,14 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/other.css">
     <link rel="stylesheet" href="css/area.css">
+    <link rel="stylesheet" href="css/comment.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Ânimations -->
+    <!-- <link rel="stylesheet" href="css/aos.css"> -->
+    <!-- <script src="js/aos.js"></script> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <!-- Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,38 +45,28 @@
             </div>
             <nav class="nav-links">
                 <a href="./index.html">Inicio</a>
-                <a href="./pragrammation.html">Programação</a>
+                <a href="./network.html">Redes</a>
                 <a href="./hardware.html">Hardware</a>
-                <a href="#contact">Contato</a>
+                <a href="#commentaries">Comentários</a>
             </nav>
         </div>
     </header>
     <main class="main">
 
         <!-- Inicio -->
-        <section class="area">
+        <section class="area" id="area">
             <div class="container">
-                <h2>Redes</h2>
-                <div class="row">
+                <h2 class="programmation">Programação</h2>
+                <div class="row" data-aos="fade-up">
                     <div class="col col-image">
-                        <img src="images/redes.jpg" alt="Local de trabalho de redes">
+                        <img src="images/programacao.svg" alt="">
                     </div>
                     <div class="col">
                         <p>
-
-                            Projetamos, implementamos e gerenciamos redes de computadores para garantir conectividade
-                            confiável e eficiente.
-
-
-                            Nossos serviços incluem: criação e configuração de redes locais (LANs);
-
-                            Cabeamento estrurado de redes LANs, redes sem fio (Wi-Fi) e muito mais.
-                        </p>
-                        <p>
-                            Projetamos , configuramos e implementamos redes de computadores.Isso pode incluir
-                            instalanção de software , monitoramento de desempenho , segurança de rede e resolução de
-                            problemas.Eles tembém podem estar envolvidoresna adminstração de servidores,
-                            roteadores,swiches e firewalls
+                            Desenvolvimento de Websites:
+                            Criamos websites profissionais e responsivos que refletem a identidade e os objetivos de
+                            nossos clientes. Nossos serviços abrangem desde o design e desenvolvimento até a otimização
+                            para mecanismos de busca (SEO) e integração com sistemas de gerenciamento de conteúdo (CMS).
                         </p>
                     </div>
                 </div>
@@ -77,21 +74,19 @@
             </div>
         </section>
 
-        <!-- <section class="work">
+        <section class="work" id="work">
             <div class="container">
                 <h2>Nossos serviços</h2>
                 <h3>Tudo que voçê precisa para um website</h3>
-                <div class="row">
+                <div class="row" data-aos="fade-up">
 
                     <div class="card">
                         <div class="card-icon">
                             <i class="fa fa-file"></i>
                         </div>
                         <div class="card-body">
-                            <h4>Create statics pages</h4>
-                            <p>Developing dynamic and static websites from scratch, incorporating design
-                                elements and
-                                functional features to meet client specifications. </p>
+                            <h4>Criação de páginas</h4>
+                            <p>Criamos páginas simples desde Ecommerce ,Landing Pages até Portifolios</p>
                         </div>
                     </div>
 
@@ -100,10 +95,8 @@
                             <i class="fa fa-search"></i>
                         </div>
                         <div class="card-body">
-                            <h4>Website Review</h4>
-                            <p>Constructing platforms where users can share and discover reviews, ratings, and
-                                feedback
-                                on products, services, or experiences, fostering informed decision-making.</p>
+                            <h4>Resivão e Hospedagem</h4>
+                            <p>Estamos disponiveis para revisar, manunteção e hospedar-lo o teu site</p>
                         </div>
                     </div>
 
@@ -112,45 +105,58 @@
                             <i class="fab fa-node"></i>
                         </div>
                         <div class="card-body">
-                            <h4>Build server</h4>
-                            <p>Setting up and configuring servers to host websites or web
-                                applications, ensuring reliable performance, security, and accessibility.</p>
+                            <h4>Construção de servidores</h4>
+                            <p>Criamos servidores com nodejs e banco de dados com mongodb e postgres</p>
                         </div>
                     </div>
 
                 </div>
             </div>
-        </section> -->
+        </section>
 
-        <!-- Contato -->
-        <section class="contact" id="contact">
+        <!-- Comentarios -->
+        <section class="commentaries" id="commentaries">
             <div class="container">
-                <h2>Contato</h2>
-                <h3>Deixem-nos uma mensagem</h3>
+                <h2>Comentarios</h2>
+                <h3>Deixe um comentario ou reclamação</h3>
 
                 <div class="row">
-                    <form name="contact-us">
-                        <div class="box">
-                            <input type="text" class="form-control" id="name" placeholder="Seu nome" name="name"
-                                required />
-                        </div>
-                        <div class="box">
-                            <input type="email" class="form-control" id="email" placeholder="Seu email" name="email"
-                                required />
-                        </div>
-                        <div class="box">
-                            <textarea id="message" class="form-control" cols="30" rows="10" placeholder="Sua mensagem"
-                                name="message" name="message" required></textarea>
-                        </div>
-                        <div class="box">
-                            <button type="submit" class="btn">
-                                <i class="fa fa-paper-plane"></i> Send
-                            </button>
-                        </div>
-                    </form>
 
-                    <div class="wrapper-image">
-                        <img src="images/contact.svg" alt="Imagem de redes">
+                    <div class="wrapper-form">
+                        <form action="http://localhost:4040/comment" method="post">
+                            <input type="hidden" id="area" name="area" value="programmation">
+                            <div class="box">
+                                <input type="text" class="form-control" id="name" placeholder="Seu nome" name="name"
+                                    required />
+                            </div>
+                            <div class="box">
+                                <textarea id="message" class="form-control" cols="30" rows="10"
+                                    placeholder="Sua mensagem" name="message" name="message" required></textarea>
+                            </div>
+                            <div class="box">
+                                <button type="submit" class="btn">
+                                    <i class="fa fa-paper-plane"></i> Comentar
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="wrapper-messages">
+                        <div class="messages">
+
+                            <div class="template message">
+                                <div class="top">
+                                    <span class="name"></span>
+                                    <span class="date"></span>
+                                </div>
+                                <div class="body"></div>
+                                <a href="#" class="answers"></a>
+                            </div>
+
+                        </div>
+                        <div class="background hide">
+                            <img src="images/loading.gif" alt="loading_image">
+                        </div>
                     </div>
                 </div>
 
@@ -173,20 +179,17 @@
                     </div>
                     <div class="col">
                         <h4>Links rapido</h4>
-                        <a href="#home"><i class="fa fa-angle-right"></i>Inicio</a>
-                        <a href="#about"><i class="fa fa-angle-right"></i>Sobre nós</a>
-                        <a href="#cultura"><i class="fa fa-angle-right"></i>cultura</a>
-                        <a href="#team"><i class="fa fa-angle-right"></i>Equipa</a>
-                        <a href="#services"><i class="fa fa-angle-right"></i>Serviços</a>
-                        <a href="#contact"><i class="fa fa-angle-right"></i>Contato</a>
+                        <a href="#area"><i class="fa fa-angle-right"></i>Inicio</a>
+                        <a href="#work"><i class="fa fa-angle-right"></i>Serviços</a>
+                        <a href="#commentaries"><i class="fa fa-angle-right"></i>Comentários</a>
                     </div>
                     <div class="col">
                         <h4>Nossos serviços</h4>
-                        <a href="./pragrammation.html"><i class="fa fa-angle-right"></i>Desevolvimento de website</a>
+                        <a href="./programmation.html"><i class="fa fa-angle-right"></i>Desevolvimento de website</a>
                         <a href="./hardware.html"><i class="fa fa-angle-right"></i>Reparação de peças</a>
-                        <a href="./pragrammation.html"><i class="fa fa-angle-right"></i>Criação</a>
-                        <a href="./redes.html"><i class="fa fa-angle-right"></i>Serviços</a>
-                        <a href="./redes.html"><i class="fa fa-angle-right"></i>Redes e o curu</a>
+                        <a href="./programmation.html"><i class="fa fa-angle-right"></i>Criação</a>
+                        <a href="./network.html"><i class="fa fa-angle-right"></i>Serviços</a>
+                        <a href="./network.html"><i class="fa fa-angle-right"></i>Redes de internet</a>
                     </div>
                     <div class="col">
                         <h4>Nossas redes sociais</h4>
@@ -210,8 +213,7 @@
     </footer>
 
     <script src="js/script.js"></script>
-    <script src="js/formMessage.js"></script>
-
+    <script src="js/area.js"></script>
 </body>
 
 </html>
