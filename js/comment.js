@@ -42,7 +42,7 @@ function putMessages(messages, content) {
         message.querySelector(".body").innerText = item.message
         message.querySelector(".date").innerText = item.date
         message.querySelector(".answers").innerText = `${item.answers.length} respostas`
-        message.querySelector(".answers").href = `http://127.0.0.1:5500/admin.html?page=${page}&id=${item.id}`
+        message.querySelector(".answers").href = `https://comentariosturningcomputer.onrender.com/admin.html?page=${page}&id=${item.id}`
         content.appendChild(message)
     })
 
